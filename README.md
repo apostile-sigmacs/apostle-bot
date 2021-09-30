@@ -7,15 +7,31 @@ Download and Install Ubuntu on computer</br>
     2. Follow the instructions below to install Ubuntu on computer. </br>
         ◦ https://ubuntu.com/tutorials/install-ubuntu-desktop#6-allocate-drive-space</br>
 Install ROS 1 on development computer</br>
-Open the terminal with Ctrl+Alt+T and enter below commands one at a time.</br>
+Open the terminal with **Ctrl+Alt+T** and enter below commands one at a time.</br>
 
 keep the development computer updated by,</br>
 $ sudo apt update</br>
 $ sudo apt upgrade</br>
-</br>
+</br>__ROS INSTALLATION__<br>
 Follow the instruction below to install ROS 1 Melodic on the computer.</br> 
 	http://wiki.ros.org/melodic/Installation/Ubuntu</br>
-  
+else follow the instructions below.<br>
+**step 1:** $ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'<br>
+**step 2:** $ sudo apt install curl<br>
+**step 4:** $ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -<br>
+**step 5:** $ sudo apt update<br>
+**step 6:** $ sudo apt install ros-melodic-desktop-full<br>
+**step 7:** $ echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc<br>
+**step 8:** $ source ~/.bashrc<br>
+**step 9:** $ sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential<br>
+**step 10:** $ sudo apt install python-rosdep<br>
+**step 11:** $ sudo rosdep init<br>
+**step 12:** $ rosdep update<br>
+
+**NOTE:**<br>
+After successfull ROS installation, here is the command to check whether ROS is working properly.<br>
+$ roscore<br>
+
 Create a ROS Workspace</br>
 </br>
 Once you have installed ROS on both computers, install Apostle packages and dependencies.</br>
