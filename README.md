@@ -1,9 +1,9 @@
 # apostle-bot
- Development computer:
-computer Setup</br>
+__Development computer:__<br>
+__OS INSTALLATION__</br>
 Download and Install Ubuntu on computer</br>
-    1. Download the proper Ubuntu 18.04 LTS Desktop image for your computer from the links below.</br> 
-        ◦ https://releases.ubuntu.com/18.04.5/</br>
+    1. Download the proper **Ubuntu 18.04 LTS Desktop image** for your computer from the links below.</br> 
+        ◦ https://releases.ubuntu.com/18.04/</br>
     2. Follow the instructions below to install Ubuntu on computer. </br>
         ◦ https://ubuntu.com/tutorials/install-ubuntu-desktop#6-allocate-drive-space</br>
 Install ROS 1 on development computer</br>
@@ -42,7 +42,7 @@ $<git clone here></br>
 $cd ~/catkin_ws</br>
 $./install.sh 4wd rplidar</br>
 
-Robot Computer:</br>
+__Robot Computer:__</br>
 For simple use raspberry pi with latest raspbian OS which can be found in the link below.</br>
 		https://www.raspberrypi.org/software/</br>
    now its time to connect raspberry pi to WiFi network in headless mode in the following link
