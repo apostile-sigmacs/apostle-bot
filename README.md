@@ -34,31 +34,31 @@ $ roscore<br>
 
 **Create a ROS Workspace**</br>
 </br>
-Once you have installed ROS on both computers, install Apostle packages and dependencies.</br>
+Once you have installed ROS in  computers, install Apostle packages and dependencies.</br>
 On the development computer, install the packages required for configuration and visualization:</br>
 $ mkdir -p ~/apostle_ws</br>
 $ cd ~/apostle_ws</br>
 $ git clone https://github.com/apostile-sigmacs/apostle-bot.git</br>
-$ mv -f apostle-bot src
-$ cd src
+$ mv -f apostle-bot src<br>
+$ cd src<br>
 $./install.sh 4wd rplidar</br>
 
 __Robot Computer:__</br>
-For simple use raspberry pi with latest raspbian OS which can be found in the link below.</br>
-		https://www.raspberrypi.org/software/</br>
-   now its time to connect raspberry pi to WiFi network in headless mode in the following link<br>
-    https://www.raspberrypi.org/documentation/computers/configuration.html<br>
-	After setting up the raspberry pi with raspbian OS now, install Melodic which is described below link.</br>
-	http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Melodic%20on%20the%20Raspberry%20Pi</br></br>
-  In the above link replace the following command in Setup ROS Repositories</br></br>
-	$ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654</br>
-With </br>
-	$ sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654</br>
-  After completion of installation, now it's time to create a workspace for the robot on the terminal.
-$mkdir -p ~/apostile_ws
-$<git clone here>
-$cd ~/catkin_ws
-$./install.sh 4wd rplidar
+Download **UBUNTU 18 SERVER** from the below link<br>
+https://drive.google.com/file/d/1n6RQMVkLDHs2QuCN3l0B9yforBx31siE/view?usp=sharing<br>
+download the ubuntu into the personal computer, now write the image file into the meomry card using the **Etcher** software which can be downloaded from the link below<br>
+https://www.balena.io/etcher/<br>
+follow the images below to flash the os image into memory card
+
+__Connecting ubuntu raspberry pi to wifi network in headless mode__
+_**NOTE:This can be done after flashing the os image file**_<br>
+
+$ mkdir -p ~/apostle_ws</br>
+$ cd ~/apostle_ws</br>
+$ git clone https://github.com/apostile-sigmacs/apostle-bot.git</br>
+$ mv -f apostle-bot src<br>
+$ cd src<br>
+$./install.sh 4wd rplidar</br>
 
 Network Setup
 Configure your ROS network so your development computer knows where the ROS Master(robot's computer) is within your local network. First, find out the ip-address of your robot's computer and development computer:
