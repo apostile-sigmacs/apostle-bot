@@ -38,7 +38,7 @@ Once you have installed ROS on both computers, install Apostle packages and depe
 
 On the development computer, install the packages required for configuration and visualization:</br>
 $mkdir -p ~/apostile_ws</br>
-$<git clone here></br>
+$ git clone https://github.com/apostile-sigmacs/apostle-bot.git</br>
 $cd ~/catkin_ws</br>
 $./install.sh 4wd rplidar</br>
 
