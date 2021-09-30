@@ -2,10 +2,10 @@
 __Development computer:__<br>
 __OS INSTALLATION__</br>
 Download and Install Ubuntu on computer</br>
-    1. Download the proper **Ubuntu 18.04 LTS Desktop image** for your computer from the links below.</br> 
-        ◦ https://releases.ubuntu.com/18.04/</br>
-    2. Follow the instructions below to install Ubuntu on computer. </br>
-        ◦ https://ubuntu.com/tutorials/install-ubuntu-desktop#6-allocate-drive-space</br>
+1. Download the proper **Ubuntu 18.04 LTS Desktop image** for your computer from the links below.</br>
+https://releases.ubuntu.com/18.04/
+3. Follow the instructions below to install Ubuntu on computer. </br>
+https://ubuntu.com/tutorials/install-ubuntu-desktop#6-allocate-drive-space</br>
 Install ROS 1 on development computer</br>
 Open the terminal with **Ctrl+Alt+T** and enter below commands one at a time.</br>
 
@@ -29,30 +29,31 @@ else follow the instructions below.<br>
 **step 12:** $ rosdep update<br>
 
 **NOTE:**<br>
-After successfull ROS installation, here is the command to check whether ROS is working properly.<br>
+After successful ROS installation, here is the command to check whether ROS is working properly.<br>
 $ roscore<br>
 
-Create a ROS Workspace</br>
+**Create a ROS Workspace**</br>
 </br>
 Once you have installed ROS on both computers, install Apostle packages and dependencies.</br>
-
 On the development computer, install the packages required for configuration and visualization:</br>
-$mkdir -p ~/apostile_ws</br>
+$ mkdir -p ~/apostle_ws</br>
+$ cd ~/apostle_ws</br>
 $ git clone https://github.com/apostile-sigmacs/apostle-bot.git</br>
-$cd ~/catkin_ws</br>
+$ mv -f apostle-bot src
+$ cd src
 $./install.sh 4wd rplidar</br>
 
 __Robot Computer:__</br>
 For simple use raspberry pi with latest raspbian OS which can be found in the link below.</br>
 		https://www.raspberrypi.org/software/</br>
-   now its time to connect raspberry pi to WiFi network in headless mode in the following link
-    https://www.raspberrypi.org/documentation/computers/configuration.html
+   now its time to connect raspberry pi to WiFi network in headless mode in the following link<br>
+    https://www.raspberrypi.org/documentation/computers/configuration.html<br>
 	After setting up the raspberry pi with raspbian OS now, install Melodic which is described below link.</br>
 	http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Melodic%20on%20the%20Raspberry%20Pi</br></br>
   In the above link replace the following command in Setup ROS Repositories</br></br>
-	$sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654</br>
+	$ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654</br>
 With </br>
-	$sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654</br>
+	$ sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654</br>
   After completion of installation, now it's time to create a workspace for the robot on the terminal.
 $mkdir -p ~/apostile_ws
 $<git clone here>
