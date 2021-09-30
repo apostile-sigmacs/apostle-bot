@@ -95,8 +95,9 @@ ros-$ROSDISTRO-usb-cam \
 ros-$ROSDISTRO-slam-gmapping \
 ros-$ROSDISTRO-rosbridge-suite \
 ros-$ROSDISTRO-rosbridge-server \
-ros-$ROSDISTRO-map-server
-
+ros-$ROSDISTRO-map-server \
+ros-$ROSDISTRO-compressed-image-transport \
+ros-$ROSDISTRO-camera-info-manager
 
 sudo apt-get install -y ros-$ROSDISTRO-rplidar-ros
 
@@ -106,10 +107,10 @@ sudo apt install python-gobject-2-dev
 sudo apt install autoconf
 sudo apt-get install libgudev-1.0-dev
 
-cd $HOME/apstron_ws
+cd $HOME/apostle_ws
 catkin_make
 
-echo "source $HOME/apstron_ws/devel/setup.bash" >> $HOME/.bashrc
+echo "source $HOME/apostle_ws/devel/setup.bash" >> $HOME/.bashrc
 echo "export ROBOTLIDAR=$SENSOR" >> $HOME/.bashrc
 echo "export ROBOTBASE=$BASE" >> $HOME/.bashrc
 source $HOME/.bashrc
