@@ -48,10 +48,11 @@ Download **UBUNTU 18 SERVER** from the below link<br>
 https://drive.google.com/file/d/1n6RQMVkLDHs2QuCN3l0B9yforBx31siE/view?usp=sharing<br>
 download the ubuntu into the personal computer, now write the image file into the meomry card using the **Etcher** software which can be downloaded from the link below<br>
 https://www.balena.io/etcher/<br>
-follow the images below to flash the os image into memory card
-
-__Connecting ubuntu raspberry pi to wifi network in headless mode__
+follow the images below to flash the os image into memory card<br>
+__Connecting ubuntu raspberry pi to wifi network in headless mode__<br>
 _**NOTE:This can be done after flashing the os image file**_<br>
+connect the memory card to PC and navigate to the flash storage folder change the netplan WiFi configurations which was shown in below image.<br>
+now insert the MMC into the raspberry pi and check if raspberry pi is connected to WiFi or not by logging into the router.
 
 $ mkdir -p ~/apostle_ws</br>
 $ cd ~/apostle_ws</br>
