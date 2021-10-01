@@ -55,31 +55,58 @@ download the ubuntu into the personal computer, now write the image file into th
 below<br>
 https://www.balena.io/etcher/<br>
 follow the images below to flash the os image into memory card<br>
-**step1:** open the __*Etcher*__ application which was downloaded<br>
+__step 1:__ open the __*Etcher*__ application which was downloaded<br>
 <p align="center">
   <img src="https://github.com/apostile-sigmacs/apostle-bot/tree/main/git-images/etcher.png" width="350" title="Etcher">
 </p>
-<br>
-**step2:** fetch Image file by selecting __*Flash from file*__ option, and navigate to the directory where the OS image file was.<br>
+**step 2:** fetch Image file by selecting __*Flash from file*__ option, and navigate to the directory where the OS image file was.<br>
 <p align="center">
   <img src="https://github.com/apostile-sigmacs/apostle-bot/tree/main/git-images/etcher_ubuntu_image.png" width="350" title="OS image file">
 </p>
 <br>
-**step3:** select the storage or flash card by __*Select flah*__ option<br>
+**step 3:** select the storage or flash card by __*Select flah*__ option<br>
 <p align="center">
   <img src="https://github.com/apostile-sigmacs/apostle-bot/tree/main/git-images/select_flash.png" width="350" title="Target storage">
 </p>
 <br>
-**step4:** now write the image file into the memory card by __**flash**__ option<br>
+**step 4:** now write the image file into the memory card by __**flash**__ option<br>
 <p align="center">
   <img src="https://github.com/apostile-sigmacs/apostle-bot/tree/main/git-images/flash.png" width="350" title="Flash the card">
 </p>
-
+<br>
 __Connecting ubuntu raspberry pi to wifi network in headless mode__<br>
 _**NOTE:This can be done after flashing the os image file**_<br>
 connect the memory card to PC and navigate to the flash storage folder change the netplan WiFi configurations which was shown in below image.<br>
-now insert the MMC into the raspberry pi and check if raspberry pi is connected to WiFi or not by logging into the router.
+**step 1:** plugin memory card into the PC and go to **system-boot** drive, by openning the **File manager**.<br>
+**step 2:** search for the **network-config**,and open it. file<br>
+In this file uncomment the following lines (marked __**#**__) and add the WiFi id and password, save the file and eject the memory card.<br>
+**step 3:** Insert the memory card into the raspberry pi, check if raspberry pi is connected to WiFi or not by logging into the router.<br>
+**step 4:** open terminal on your PC connect to raspberry pi over **SSH**. by the following command<br>
+$ ssh ubuntu@<raspberry pi IP>
+</br>
+_**Note:
+	default username for raspberry pi is --> ubuntu
+	default password for raspberry pi  is --> ubuntu**_
+</br>
+After this it will prompots to change the raspberry pi password, follow the instructions that has been prompted.</br>
+If everything is good install **ROS** on raspberry pi.</br>
 
+Follow the instruction below to install ROS 1 Melodic on the computer.<br> 
+	http://wiki.ros.org/melodic/Installation/Ubuntu<br>
+else follow the instructions below.<br>
+**step 1:** $ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'<br>
+**step 2:** $ sudo apt install curl<br>
+**step 4:** $ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -<br>
+**step 5:** $ sudo apt update<br>
+**step 6:** $ sudo apt install ros-melodic-desktop-full<br>
+**step 7:** $ echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc<br>
+**step 8:** $ source ~/.bashrc<br>
+**step 9:** $ sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential<br>
+**step 10:** $ sudo apt install python-rosdep<br>
+**step 11:** $ sudo rosdep init<br>
+**step 12:** $ rosdep update<br>
+
+**CREATING A ROBOT WORKSPACE**</br>
 $ mkdir -p ~/apostle_ws<br>
 $ cd ~/apostle_ws<br>
 $ git clone https://github.com/apostile-sigmacs/apostle-bot.git<br>
