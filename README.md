@@ -1,19 +1,19 @@
 # apostle-bot
 __Development computer:__<br>
-__OS INSTALLATION__</br>
+__OS INSTALLATION__<br>
 Download and Install Ubuntu on computer</br>
-1. Download the proper **Ubuntu 18.04 LTS Desktop image** for your computer from the links below.</br>
+1. Download the proper **Ubuntu 18.04 LTS Desktop image** for your computer from the links below.<br>
 https://releases.ubuntu.com/18.04/
-3. Follow the instructions below to install Ubuntu on computer. </br>
-https://ubuntu.com/tutorials/install-ubuntu-desktop#6-allocate-drive-space</br>
-Install ROS 1 on development computer</br>
-Open the terminal with **Ctrl+Alt+T** and enter below commands one at a time.</br>
+3. Follow the instructions below to install Ubuntu on computer. <br>
+https://ubuntu.com/tutorials/install-ubuntu-desktop#6-allocate-drive-space<br>
+Install ROS 1 on development computer<br>
+Open the terminal with **Ctrl+Alt+T** and enter below commands one at a time.<br>
 
-keep the development computer updated by,</br>
-$ sudo apt update</br>
-$ sudo apt upgrade</br>
-</br>__ROS INSTALLATION__<br>
-Follow the instruction below to install ROS 1 Melodic on the computer.</br> 
+keep the development computer updated by,<br>
+$ sudo apt update<br>
+$ sudo apt upgrade<br>
+<br>__ROS INSTALLATION__<br>
+Follow the instruction below to install ROS 1 Melodic on the computer.<br> 
 	http://wiki.ros.org/melodic/Installation/Ubuntu</br>
 else follow the instructions below.<br>
 **step 1:** $ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'<br>
@@ -32,16 +32,16 @@ else follow the instructions below.<br>
 After successful ROS installation, here is the command to check whether ROS is working properly.<br>
 $ roscore<br>
 
-**Create a ROS Workspace**</br>
+**Create a ROS Workspace**<br>
 </br>
-Once you have installed ROS in  computers, install Apostle packages and dependencies.</br>
-On the development computer, install the packages required for configuration and visualization:</br>
-$ mkdir -p ~/apostle_ws</br>
+Once you have installed ROS in  computers, install Apostle packages and dependencies.<br>
+On the development computer, install the packages required for configuration and visualization:<br>
+$ mkdir -p ~/apostle_ws<br>
 $ cd ~/apostle_ws</br>
-$ git clone https://github.com/apostile-sigmacs/apostle-bot.git</br>
+$ git clone https://github.com/apostile-sigmacs/apostle-bot.git<br>
 $ mv -f apostle-bot src<br>
 $ cd src<br>
-$./install.sh 4wd rplidar</br>
+$./install.sh 4wd rplidar<br>
 
 __Robot Computer:__</br>
 Download **UBUNTU 18 SERVER** from the below link<br>
@@ -54,9 +54,9 @@ _**NOTE:This can be done after flashing the os image file**_<br>
 connect the memory card to PC and navigate to the flash storage folder change the netplan WiFi configurations which was shown in below image.<br>
 now insert the MMC into the raspberry pi and check if raspberry pi is connected to WiFi or not by logging into the router.
 
-$ mkdir -p ~/apostle_ws</br>
-$ cd ~/apostle_ws</br>
-$ git clone https://github.com/apostile-sigmacs/apostle-bot.git</br>
+$ mkdir -p ~/apostle_ws<br>
+$ cd ~/apostle_ws<br>
+$ git clone https://github.com/apostile-sigmacs/apostle-bot.git<br>
 $ mv -f apostle-bot src<br>
 $ cd src<br>
 $./install.sh 4wd rplidar</br>
