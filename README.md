@@ -14,7 +14,7 @@ $ sudo apt update<br>
 $ sudo apt upgrade<br>
 <br>__ROS INSTALLATION__<br>
 Follow the instruction below to install ROS 1 Melodic on the computer.<br> 
-	http://wiki.ros.org/melodic/Installation/Ubuntu</br>
+	http://wiki.ros.org/melodic/Installation/Ubuntu<br>
 else follow the instructions below.<br>
 **step 1:** $ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'<br>
 **step 2:** $ sudo apt install curl<br>
@@ -33,9 +33,9 @@ After successful ROS installation, here is the command to check whether ROS is w
 $ roscore<br>
 
 <p align="center">
-  <img src="https://github.com/apostile-sigmacs/apostle-bot/tree/main/.git-images/roscore-image.jpg" width="350" title="ROSCORE">
-<!--   <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text"> -->
+  <img src="https://github.com/apostile-sigmacs/apostle-bot/tree/main/git-images/roscore-image.jpg" width="350" title="ROSCORE">
 </p>
+
 <br>
 **Create a ROS Workspace**<br>
 </br>
@@ -48,12 +48,33 @@ $ mv -f apostle-bot src<br>
 $ cd src<br>
 $./install.sh 4wd rplidar<br>
 
-__Robot Computer:__</br>
+__Robot Computer:__<br>
 Download **UBUNTU 18 SERVER** from the below link<br>
 https://drive.google.com/file/d/1n6RQMVkLDHs2QuCN3l0B9yforBx31siE/view?usp=sharing<br>
-download the ubuntu into the personal computer, now write the image file into the meomry card using the **Etcher** software which can be downloaded from the link below<br>
+download the ubuntu into the personal computer, now write the image file into the meomry card using the **Etcher** software which can be downloaded from the link 
+below<br>
 https://www.balena.io/etcher/<br>
 follow the images below to flash the os image into memory card<br>
+**step1:** open the __*Etcher*__ application which was downloaded<br>
+<p align="center">
+  <img src="https://github.com/apostile-sigmacs/apostle-bot/tree/main/git-images/etcher.png" width="350" title="Etcher">
+</p>
+<br>
+**step2:** fetch Image file by selecting __*Flash from file*__ option, and navigate to the directory where the OS image file was.<br>
+<p align="center">
+  <img src="https://github.com/apostile-sigmacs/apostle-bot/tree/main/git-images/etcher_ubuntu_image.png" width="350" title="OS image file">
+</p>
+<br>
+**step3:** select the storage or flash card by __*Select flah*__ option<br>
+<p align="center">
+  <img src="https://github.com/apostile-sigmacs/apostle-bot/tree/main/git-images/select_flash.png" width="350" title="Target storage">
+</p>
+<br>
+**step4:** now write the image file into the memory card by __**flash**__ option<br>
+<p align="center">
+  <img src="https://github.com/apostile-sigmacs/apostle-bot/tree/main/git-images/flash.png" width="350" title="Flash the card">
+</p>
+
 __Connecting ubuntu raspberry pi to wifi network in headless mode__<br>
 _**NOTE:This can be done after flashing the os image file**_<br>
 connect the memory card to PC and navigate to the flash storage folder change the netplan WiFi configurations which was shown in below image.<br>
