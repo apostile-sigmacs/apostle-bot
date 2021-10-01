@@ -35,8 +35,8 @@ $ roscore<br>
 <p align="center">
   <img src="https://github.com/apostile-sigmacs/apostle-bot/blob/main/git-images/roscore-image.jpg" height="600" width="800" title="ROSCORE">
 </p>
-
 <br>
+
 **Create a ROS Workspace**<br>
 </br>
 Once you have installed ROS in  computers, install Apostle packages and dependencies.<br>
