@@ -78,8 +78,14 @@ __Connecting ubuntu raspberry pi to wifi network in headless mode__<br>
 _**NOTE:This can be done after flashing the os image file**_<br>
 connect the memory card to PC and navigate to the flash storage folder change the netplan WiFi configurations which was shown in below image.<br>
 **step 1:** plugin memory card into the PC and go to **system-boot** drive, by openning the **File manager**.<br>
+<p align="center">
+  <img src="https://github.com/apostile-sigmacs/apostle-bot/tree/main/git-images/system-boot.png" width="350" title="Boot">
+</p>
 **step 2:** search for the **network-config**,and open it. file<br>
 In this file uncomment the following lines (marked __**#**__) and add the WiFi id and password, save the file and eject the memory card.<br>
+<p align="center">
+  <img src="https://github.com/apostile-sigmacs/apostle-bot/tree/main/git-images/wifi-ssid-pwd.png" width="350" title="Boot">
+</p>
 **step 3:** Insert the memory card into the raspberry pi, check if raspberry pi is connected to WiFi or not by logging into the router.<br>
 **step 4:** open terminal on your PC connect to raspberry pi over **SSH**. by the following command<br>
 $ ssh ubuntu@<raspberry pi IP>
