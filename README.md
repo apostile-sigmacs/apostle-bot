@@ -32,6 +32,11 @@ else follow the instructions below.<br>
 After successful ROS installation, here is the command to check whether ROS is working properly.<br>
 $ roscore<br>
 
+<p align="center">
+  <img src="https://github.com/apostile-sigmacs/apostle-bot/tree/main/.git-images/roscore-image.jpg" width="350" title="ROSCORE">
+<!--   <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text"> -->
+</p>
+<br>
 **Create a ROS Workspace**<br>
 </br>
 Once you have installed ROS in  computers, install Apostle packages and dependencies.<br>
