@@ -33,7 +33,7 @@ After successful ROS installation, here is the command to check whether ROS is w
 $ roscore<br>
 
 <p align="center">
-  <img src="https://github.com/apostile-sigmacs/apostle-bot/tree/main/git-images/roscore-image.jpg" width="350" title="ROSCORE">
+  <img src="https://github.com/apostile-sigmacs/apostle-bot/blob/main/git-images/roscore-image.jpg" height="600" width="800" title="ROSCORE">
 </p>
 
 <br>
@@ -57,21 +57,22 @@ https://www.balena.io/etcher/<br>
 follow the images below to flash the os image into memory card<br>
 __step 1:__ open the __*Etcher*__ application which was downloaded<br>
 <p align="center">
-  <img src="https://github.com/apostile-sigmacs/apostle-bot/tree/main/git-images/etcher.png" width="350" title="Etcher">
+  <img src="https://github.com/apostile-sigmacs/apostle-bot/blob/main/git-images/etcher.png" height="600" width="800" title="Etcher">
+	
 </p>
 **step 2:** fetch Image file by selecting __*Flash from file*__ option, and navigate to the directory where the OS image file was.<br>
 <p align="center">
-  <img src="https://github.com/apostile-sigmacs/apostle-bot/tree/main/git-images/etcher_ubuntu_image.png" width="350" title="OS image file">
+  <img src="https://github.com/apostile-sigmacs/apostle-bot/blob/main/git-images/etcher_ubuntu_image.png" height="600" width="800" title="OS image file">
 </p>
 <br>
 **step 3:** select the storage or flash card by __*Select flah*__ option<br>
 <p align="center">
-  <img src="https://github.com/apostile-sigmacs/apostle-bot/tree/main/git-images/select_flash.png" width="350" title="Target storage">
+  <img src="https://github.com/apostile-sigmacs/apostle-bot/blob/main/git-images/select_flash.png" height="600" width="800" title="Target storage">
 </p>
 <br>
 **step 4:** now write the image file into the memory card by __**flash**__ option<br>
 <p align="center">
-  <img src="https://github.com/apostile-sigmacs/apostle-bot/tree/main/git-images/flash.png" width="350" title="Flash the card">
+  <img src="https://github.com/apostile-sigmacs/apostle-bot/blob/main/git-images/flash.png" height="600" width="800" title="Flash the card">
 </p>
 <br>
 __Connecting ubuntu raspberry pi to wifi network in headless mode__<br>
@@ -79,12 +80,12 @@ _**NOTE:This can be done after flashing the os image file**_<br>
 connect the memory card to PC and navigate to the flash storage folder change the netplan WiFi configurations which was shown in below image.<br>
 **step 1:** plugin memory card into the PC and go to **system-boot** drive, by openning the **File manager**.<br>
 <p align="center">
-  <img src="https://github.com/apostile-sigmacs/apostle-bot/tree/main/git-images/system-boot.png" width="350" title="Boot">
+  <img src="https://github.com/apostile-sigmacs/apostle-bot/blob/main/git-images/system-boot.png"  height="600" width="800" title="Boot">
 </p>
 **step 2:** search for the **network-config**,and open it. file<br>
 In this file uncomment the following lines (marked __**#**__) and add the WiFi id and password, save the file and eject the memory card.<br>
 <p align="center">
-  <img src="https://github.com/apostile-sigmacs/apostle-bot/tree/main/git-images/wifi-ssid-pwd.png" width="350" title="Boot">
+  <img src="https://github.com/apostile-sigmacs/apostle-bot/blob/main/git-images/wifi-ssid-pwd.png" height="400" width="400" title="Boot">
 </p>
 **step 3:** Insert the memory card into the raspberry pi, check if raspberry pi is connected to WiFi or not by logging into the router.<br>
 **step 4:** open terminal on your PC connect to raspberry pi over **SSH**. by the following command<br>
